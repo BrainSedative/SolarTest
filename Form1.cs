@@ -78,11 +78,7 @@ namespace Pozdra
         {
             if (gridBirthdays.CurrentRow.Index != -1)
             {
-                BdayDatabaseEntities db = new BdayDatabaseEntities();
-                bdayperson.Id = (int)gridBirthdays.CurrentRow.Cells["Id"].Value;
-                bdayperson = db.BdayPeoples.Where(x => x.Id == bdayperson.Id).FirstOrDefault();
-                txtName.Text = bdayperson.FullName;
-                txtPosition.Text = bdayperson.Position;
+
             }
         }
 
